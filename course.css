@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  background-image: url('https://i.pinimg.com/originals/2c/1d/98/2c1d98324f7a865e574aaae49cf0563c.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto ;
+padding: 10px;
+width: 360px;
+margin-left: 850px;
+margin-top: 55px;
+position: absolute;
+}
+.grid-item {
+text-align: center;
+background-image: url(https://i.pinimg.com/originals/60/fa/29/60fa29ea9f694c0d561d4c10d156dd0c.png);
+background-size: contain;
+background-repeat: no-repeat;
+width: 130px;
+height: 80px;
+padding: 10px;
+margin: 10px;
+margin-left: -10px;
+}
+.grid-item2{
+text-align: center;
+background-image: url(https://i.pinimg.com/originals/60/fa/29/60fa29ea9f694c0d561d4c10d156dd0c.png);
+background-size: cover;
+background-repeat: no-repeat;
+width: 130px;
+height: 80px;
+padding: 10px;
+margin-left: 90px;
+position: absolute;
+margin-top: 255px; 
+}
+
+
+
+img.client{
+height: 50px;
+width: 65px;
+background-size: contain;
+transition: all 0.3s ease;
+position: relative;
+margin-left: -125px;
+border: 2px solid white;
+margin-top: 10px;
+border-radius: 5px;
+border: 2px solid #5CD1FF;
+}
+img:hover {
+transform: scale(1.7);
+}
+
+
+p{
+position: absolute;
+margin-left: 44px;
+margin-top: -37px;
+color: white;
+}
+h1{
+color:#219ebc;
+font-size: 70px;
+position: absolute;
+margin-top: 250px;
+margin-left: 500px;
+}
+
+
+
+.form{
+width: 300px;
+height: 50px;
+padding: 30px;
+position: absolute;
+margin-left: 115px;
+margin-top: 80px;
+background: linear-gradient(to right, #07435b 20%, #219ebc);
+border-radius: 20px;
+border: 1.25px solid white;
+}
+.form2{    
+width: 250px;
+height: 400px;
+margin: 10px;
+position: absolute;
+margin-left: 205px;
+margin-top: 200px;
+}
+.calctotal{
+width: 250px;
+position: absolute;
+margin-left: 515px;
+margin-top: 410px;
+border-radius: 20px;
+padding: 5px;
+}
+
+
+
+.form input[type="button"]{
+width: 160px;
+background: linear-gradient(to right, #07435b 20%, #219ebc);
+height: 50px;
+border-radius: 100px;
+color: white;
+border: 1px solid white;
+margin-left: 20px;
+}
+.form input[type="number"]{
+width: 90px;
+height: 50px;
+border-radius: 100px;
+border: none;
+text-align: center;
+color: #07435b;
+margin-left: 2px;
+}
+.form2 input[type="button"]{
+width: 120px;
+background: linear-gradient(to right, #07435b 20%, #219ebc);
+height: 35px;
+border-radius: 100px;
+color: white;
+border: 1px solid white;
+margin:3px;
+}
+.form2 input[type="number"]{
+width: 60px;
+height: 33px;
+border: 1px solid white;
+border-radius: 100px;
+text-align: center;
+color: #07435b;
+}
+.calctotal input[type="button"]{
+width: 130px;
+background: linear-gradient(to right, #07435b 0%, #219ebc);
+height: 43px;
+border-radius: 100px;
+border: 1px solid white;
+color: white;
+margin:2px;
+}
+.calctotal input[type="number"]{
+width: 70px;
+height: 43px;
+border-radius: 100px;
+border: none;
+text-align: center;
+font-size: 17px;
+color: #07435b;
+}
+
+
+

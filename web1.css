@@ -1,0 +1,304 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  background-image: url('https://i.pinimg.com/originals/2c/1d/98/2c1d98324f7a865e574aaae49cf0563c.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+
+
+p{
+position: absolute;
+margin-left: 44px;
+margin-top: -37px;
+color: white;
+}
+h1{
+color:white;
+font-size: 40px;
+position: absolute;
+margin-top: 70px;
+margin-left: 300px;
+}
+.form{
+    width: 300px;
+    height: 50px;
+    padding: 30px;
+    position: absolute;
+    margin-left: 775px;
+    margin-top: 130px;
+    background: linear-gradient(to right, #07435b 20%, #219ebc);
+    border-radius: 20px;
+    border: 1.25px solid white;
+    }
+    #form2{    
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    position: absolute;
+    margin-left: 860px;
+    margin-top: 245px;
+    }
+    #calctotal{
+    width: 750px;
+    position: absolute;
+    margin-left: 87px;
+    margin-top: 550px;
+    border-radius: 20px;
+    }
+
+    .reset{
+        width: 160px;
+    position: absolute;
+    margin-left: 880px;
+    margin-top: 600px;
+    border-radius: 20px;
+    }
+    .reset input[type ='button']{
+        width: 70px;
+    background: linear-gradient(to right, #07435b 50%, #219ebc);
+    height: 30px;
+    border-radius: 100px;
+    color: white;
+    border: 1px solid white;
+    margin-left: 3px;
+    }
+   
+   
+   
+    .form input[type="button"]{
+    width: 160px;
+    background: linear-gradient(to right, #07435b 20%, #219ebc);
+    height: 50px;
+    border-radius: 100px;
+    color: white;
+    border: 1px solid white;
+    margin-left: 20px;
+    }
+    .form input[type="number"]{
+    width: 90px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    color: #07435b;
+    margin-left: 2px;
+    }
+    #form2 input[type="button"]{
+    width: 120px;
+    background: linear-gradient(to right, #07435b 20%, #219ebc);
+    height: 35px;
+    border-radius: 100px;
+    color: white;
+    border: 1px solid white;
+    margin:3px;
+    }
+    #form2 input[type="number"]{
+    width: 60px;
+    height: 33px;
+    border: 1px solid white;
+    border-radius: 100px;
+    text-align: center;
+    color: #07435b;
+    }
+    #calctotal input[type="button"]{
+    width: 130px;
+    background: linear-gradient(to right, #07435b 0%, #219ebc);
+    height: 43px;
+    border-radius: 100px;
+    border: 1px solid white;
+    color: white;
+    margin-left:10px;
+    }
+    #calctotal input[type="number"]{
+    width: 70px;
+    height: 43px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    color: #07435b;
+    margin-right: 20px;
+    justify-content: center;
+
+    }
+ 
+       
+   
+img{
+
+height: 175px;
+width: 175px;
+border-radius: 20px;
+
+}
+div.scroll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 130px;
+    margin-left: 110px;
+    position: absolute;
+    border-radius: 20px;
+    height: 385px;
+    width: 650px;
+    overflow: auto;
+   
+    padding-top:10px ;
+}
+
+
+   
+
+
+
+
+.bg{
+    position: absolute;
+    margin-right: 416px;
+}
+.dw{
+    position: absolute;
+   
+}
+.dys{
+    position: absolute;
+    margin-left: 416px;
+   
+}
+.dz{
+    position: absolute;
+    margin-top: 190px;
+    margin-right: 416px;
+   
+}
+.kw{
+    position: absolute;
+   
+    margin-top: 190px;
+}
+.kya{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 416px;
+}
+.kye{
+    position: absolute;
+    margin-right: 416px;
+    margin-top: 380px;
+}
+.kc{
+    position: absolute;
+    margin-top: 380px;
+}
+.kt{
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 416px;
+   
+}
+.kd{
+    position: absolute;
+    margin-right: 416px;
+    margin-top: 570px;
+   
+}
+.mb{
+    position: absolute;
+    margin-top: 570px;
+   
+}
+.nd{
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 416px;
+}
+.nr{
+    position: absolute;
+    margin-top: 760px;
+    margin-left: -416px;
+}
+.sm{
+    position: absolute;
+    margin-top: 760px;
+   
+}
+.shz{
+    position: absolute;
+    margin-top: 760px;
+    margin-left: 416px;
+}
+
+.sd{
+    position: absolute;
+    margin-top: 950px;
+    margin-left: -416px;
+}
+.st{
+    position: absolute;
+    margin-top: 950px;
+   
+   
+}
+.sz{
+    position: absolute;
+    margin-top: 950px;
+    margin-left: 416px;
+   
+}
+.sl{
+    position: absolute;
+    margin-top: 1140px;
+    margin-left: -416px;
+}
+.td{
+    position: absolute;
+    margin-top: 1140px;
+   
+}
+.u{
+    position: absolute;
+    margin-top: 1140px;
+    margin-left: 416px;
+}
+.uda{
+    position: absolute;
+    margin-top: 1330px;
+    margin-left: -416px;    
+}
+.udb{
+    position: absolute;
+    margin-top: 1330px ;
+   
+}
+.yw{
+    position: absolute;
+   margin-top: 1330px;
+   margin-left: 416px;
+}
+#reset{
+    position:absolute;
+    height: 35px;
+    margin-left:77%;
+    margin-top: 47%;
+    background: linear-gradient(to right, #07435b 0%, #219ebc);
+    border: 1px solid white;
+    color: white;
+    border-radius:20px ;
+    width: 55px;
+}
+
+#submit{
+    position:absolute;
+    height: 35px;
+    margin-left:72%;
+    margin-top: 47%;
+    background: linear-gradient(to right, #07435b 0%, #219ebc);
+    border: 1px solid white;
+    border-radius:20px ;
+    color: white;
+    width: 55px;
+}

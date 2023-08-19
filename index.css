@@ -1,0 +1,81 @@
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: green;
+}
+
+body {
+    background: url(https://i.pinimg.com/originals/52/56/d7/5256d7731ed2eedcb6bd36381b153902.jpg);
+    background-size: cover;
+  }
+  input {
+    height: 43px;
+    border-radius: 5px;
+    color: white;
+  }
+  .username {
+    position: absolute;
+    margin-left: 58.5%;
+    margin-top: 23.3%;
+    padding-left: 26px;
+    text-align: center;
+    background-color: #3f9689;
+    border: none;
+  }
+  .password {
+    position: absolute;
+    margin-left: 58.5%;
+    margin-top: 25%;
+    padding-left: 26px;
+    text-align: center;
+    background-color: #3f9689;
+    border: none;
+  }
+
+  button {
+    position: absolute;
+    margin-left: 54.3%;
+    padding-left: 115px;
+    padding-right: 89px;
+    margin-top: 27%;
+    text-align: center;
+    color: white;
+    background-color: #c45f55;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+  }
+
+
+
+  .new {
+    position: absolute;
+    margin-left: 54.5%;
+    padding-left: 94px;
+    padding-right: 86px;
+    margin-top: 29%;
+    text-align: center;
+    color: white;
+    background-color: #c45f55;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    
+  }
+
+#forgot{
+
+  position: absolute;
+  padding-left: 55px;
+
+  
+}
+
+  h1 {
+    position: absolute;
+    color: white;
+    margin-left: 25%;
+    margin-top: 7%;
+  }

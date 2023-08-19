@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="web1.css">
+      <link rel="stylesheet" type="text/css" href="web2.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Your script comes after the jQuery script -->
+
+    <script type="text/javascript" src="https://code.jquery-1.10.2.js"></script>
+</head>
+<h1>WELCOME TO WEB DEVELOPMENT</h1>
+<body>
+    <script>
+        $(document).ready(function() {
+         
+            // Scroll to a specific position
+          $("div.scroll").scrollTop(0);
+        });
+    </script>
+<script type="text/javascript">
+ 
+    function incrementCount(buttonId, presentId, totalId, dtotalId, btotalId) {
+      var buttonElement = document.getElementById(buttonId);
+      var presentElement = document.getElementById(presentId);
+      var totalElement = document.getElementById(totalId);
+      var dtotalElement = document.getElementById(dtotalId);
+
+      var currentValueB = parseInt(presentElement.value);
+      var currentValueT = parseInt(totalElement.value);
+      var currentValueD = parseInt(dtotalElement.value);
+
+      if (buttonElement.disabled) {
+        return; // Exit if the button is already disabled
+      }
+
+      buttonElement.disabled = true; // Disable the button
+      presentElement.value = currentValueB + 1;
+      totalElement.value = currentValueT + 1;
+      dtotalElement.value = currentValueD + 1;
+     
+    }
+
+   function bleaveCount(buttonId, leaveId, totalId, dtotalId) {
+var buttonElement = document.getElementById(buttonId);
+var leaveElement = document.getElementById(leaveId);
+var totalElement = document.getElementById(totalId);
+   var dtotalElement = document.getElementById(dtotalId);
+var currentValueB = parseInt(leaveElement.value);
+var currentValueT = parseInt(totalElement.value);
+  var currentValueD = parseInt(dtotalElement.value);
+
+if (buttonElement.disabled) {
+return; // Exit if the button is already disabled
+}
+buttonElement.disabled = true; // Disable the button
+leaveElement.value = currentValueB + 1;
+totalElement.value = currentValueT + 1;
+dotalElement.value = currentValueD + 1;
+
+
+}
+
+    function babsentCount(buttonId, absentId, totalId, dtotalId) {
+      var buttonElement = document.getElementById(buttonId);
+      var absentElement = document.getElementById(absentId);
+      var totalElement = document.getElementById(totalId);
+      var dtotalElement = document.getElementById(dtotalId);
+      var currentValueB = parseInt(absentElement.value);
+      var currentValueT = parseInt(totalElement.value);
+      var currentValueD = parseInt(dtotalElement.value);
+
+      if (buttonElement.disabled) {
+        return; // Exit if the button is already disabled
+      }
+
+      buttonElement.disabled = true; // Disable the button
+      absentElement.value = currentValueB + 1;
+      totalElement.value = currentValueT + 1;
+      dtotalElement.value = currentValueD + 1;
+    }
+
+    function gpresentCount(buttonId, presentId, totalId, dtotalId) {
+      var buttonElement = document.getElementById(buttonId);
+      var presentElement = document.getElementById(presentId);
+      var totalElement = document.getElementById(totalId);
+      var dtotalElement = document.getElementById(dtotalId);
+      var currentValueD = parseInt(dtotalElement.value);
+      var currentValueB = parseInt(presentElement.value);
+      var currentValueT = parseInt(totalElement.value);
+
+      if (buttonElement.disabled) {
+        return; // Exit if the button is already disabled
+      }
+
+      buttonElement.disabled = true; // Disable the button
+      presentElement.value = currentValueB + 1;
+      totalElement.value = currentValueT + 1;
+      dtotalElement.value = currentValueD + 1;
+    }
+
+    function gleaveCount(buttonId, leaveId, totalId, dtotalId) {
+      var buttonElement = document.getElementById(buttonId);
+      var leaveElement = document.getElementById(leaveId);
+      var totalElement = document.getElementById(totalId);
+      var dtotalElement = document.getElementById(dtotalId);
+      var currentValueD = parseInt(dtotalElement.value);
+      var currentValueB = parseInt(leaveElement.value);
+      var currentValueT = parseInt(totalElement.value);
+
+      if (buttonElement.disabled) {
+        return; // Exit if the button is already disabled
+      }
+
+      buttonElement.disabled = true; // Disable the button
+      leaveElement.value = currentValueB + 1;
+      totalElement.value = currentValueT + 1;
+      dtotalElement.value = currentValueD + 1;
+    }
+
+    function gabsentCount(buttonId, absentId, totalId, dtotalId) {
+      var buttonElement = document.getElementById(buttonId);
+      var absentElement = document.getElementById(absentId);
+      var totalElement = document.getElementById(totalId);
+      var dtotalElement = document.getElementById(dtotalId);
+      var currentValueD = parseInt(dtotalElement.value);
+      var currentValueB = parseInt(absentElement.value);
+      var currentValueT = parseInt(totalElement.value);
+
+      if (buttonElement.disabled) {
+        return; // Exit if the button is already disabled
+      }
+
+      buttonElement.disabled = true; // Disable the button
+      absentElement.value = currentValueB + 1;
+      totalElement.value = currentValueT + 1;
+      dtotalElement.value = currentValueD + 1;
+    }
+</script>
+
+<form id="mainform">
+    <div class="scroll">
+        <div class="bg">
+            <img src="https://i.pinimg.com/originals/81/66/eb/8166ebcc2a86e34ae6f01d1431838e10.png">
+            <div>
+            <button id="a" onclick="incrementCount('a', 'bpresent', 'tpresent','dtotal')">P</button>
+            <button id="b" onclick="bleaveCount('b', 'bleave', 'tleave','dtotal')">L</button>
+            <button id="c" onclick="babsentCount('c', 'babsent', 'tabsent','dtotal')">A</button>
+          </div>
+      </div>
+
+    <div  class="dw"><img src="https://i.pinimg.com/originals/e0/a1/e2/e0a1e2e3508283f4fe95df67cef8de69.png">
+    <div>
+    <button id="d" onclick="gpresentCount('d', 'gpresent', 'tpresent','dtotal')">P</button>
+    <button id="e" onclick="gleaveCount('e', 'gleave', 'tleave','dtotal')">L</button>
+    <button id="f" onclick="gabsentCount('f', 'gabsent', 'tabsent','dtotal')">A</button>
+    </div>
+    </div>
+
+    <div class="dys"><img src="https://i.pinimg.com/originals/40/98/76/409876a21836e2fbd8bfe8429cd20d38.png">
+    <div>
+    <button id="g" onclick="gpresentCount('g', 'gpresent', 'tpresent','dtotal')">P</button>
+    <button id="h" onclick="gleaveCount('h', 'gleave', 'tleave','dtotal')">L</button>
+    <button id="i" onclick="gabsentCount('i', 'gabsent', 'tabsent','dtotal')">A</button>
+    </div>
+   </div>
+
+        <div class="dz"><img src="https://i.pinimg.com/originals/12/69/62/1269626905c5495732acd30cceb415f4.png">
+            <div>
+    <button id="j" onclick="gpresentCount('j', 'gpresent', 'tpresent','dtotal')">P</button>
+    <button id="k" onclick="gleaveCount('k', 'gleave', 'tleave','dtotal')">L</button>
+    <button id="l" onclick="gabsentCount('l', 'gabsent', 'tabsent','dtotal')">A</button>
+        </div></div>
+
+     <div class="kw"><img src="https://i.pinimg.com/originals/9b/68/53/9b6853b19e1689b285724796c1f8a2a2.png">
+     <div>
+    <button id="m" onclick="incrementCount('m', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="n" onclick="bleaveCount('n', 'bleave', 'tleave','dtotal')">L</button>
+    <button id="o" onclick="babsentCount('o', 'babsent', 'tabsent','dtotal')">A</button>
+    </div>
+   </div>
+        <div class="kya"><img src="https://i.pinimg.com/originals/ac/83/44/ac83442f260054cf00198d08b11c2b8f.png">
+        <div>
+           
+    <button id="p" onclick="gpresentCount('p', 'gpresent', 'tpresent','dtotal')">P</button>
+    <button id="q" onclick="gleaveCount('q', 'gleave', 'tleave','dtotal')">L</button>
+    <button id="r" onclick="gabsentCount('r', 'gabsent', 'tabsent','dtotal')">A</button>
+        </div>
+        </div>
+
+        <div class="kye"><img src="https://i.pinimg.com/originals/c2/4b/e4/c24be478d8fb9d4fc5a628e323e83988.png">
+        <div>
+            <button id="s" onclick="incrementCount('s', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="t" onclick="bleaveCount('t', 'bleave', 'tleave','dtotal')">L</button>
+    <button id="u" onclick="babsentCount('u', 'babsent', 'tabsent','dtotal')">A</button>
+        </div>
+        </div>
+
+
+        <div class="kc"><img src="https://i.pinimg.com/564x/61/e1/e1/61e1e1234c0b210e046974fc05605c40.jpg">
+            <div>
+               
+    <button id="v" onclick="gpresentCount('v', 'gpresent', 'tpresent','dtotal')">P</button>
+    <button id="w" onclick="gleaveCount('w', 'gleave', 'tleave','dtotal')">L</button>
+    <button id="x" onclick="gabsentCount('x', 'gabsent', 'tabsent','dtotal')">A</button>
+            </div>
+            </div>
+
+        <div class="kt"><img src="https://i.pinimg.com/564x/ab/eb/5d/abeb5d7c8bf7fbb93ed4942faca04268.jpg">
+          <div>
+    <button id="y" onclick="incrementCount('y', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="z" onclick="bleaveCount('z', 'bleave', 'tleave','dtotal')">L</button>
+    <button id="aa" onclick="babsentCount('aa', 'babsent', 'tabsent','dtotal')">A</button>
+            </div>
+            </div>
+
+        <div class="kd"><img src="https://i.pinimg.com/originals/70/16/81/7016815ce2c080e55a18db8a265e9aba.png">
+            <div>
+    <button id="ab" onclick="gpresentCount('ab', 'gpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="ac" onclick="gleaveCount('ac', 'gleave', 'tleave', 'dtotal')">L</button>
+    <button id="ad" onclick="gabsentCount('ad', 'gabsent', 'tabsent', 'dtotal')">A</button>
+     </div>
+    </div>
+
+        <div class="mb"><img src="https://i.pinimg.com/originals/81/22/27/81222726cbb124615a07c43d368d749e.png">
+            <div>
+               
+    <button id="ae" onclick="incrementCount('ae', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="af" onclick="bleaveCount('af', 'bleave', 'tleave', 'dtotal')">L</button>
+    <button id="ag" onclick="babsentCount('ag', 'babsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+        <div class="nd"><img src="https://i.pinimg.com/originals/16/ab/c2/16abc24c0f53b0dcfaa9cdf61e658fb1.png">
+            <div>
+    <button id="ah" onclick="incrementCount('ah', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="ai" onclick="bleaveCount('ai', 'bleave', 'tleave', 'dtotal')">L</button>
+    <button id="aj" onclick="babsentCount('aj', 'babsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+        <div class="nr"><img src="https://i.pinimg.com/originals/8f/a3/b8/8fa3b8433bbc7c368b75bc22768aa80a.png">
+            <div>
+               
+    <button id="ak" onclick="gpresentCount('ak', 'gpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="al" onclick="gleaveCount('al', 'gleave', 'tleave', 'dtotal')">L</button>
+    <button id="am" onclick="gabsentCount('am', 'gabsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+
+        <div class="sm"><img src="https://i.pinimg.com/originals/d6/71/cc/d671ccd474baa0f911190ca563f7b4b4.png">
+            <div>
+    <button id="an" onclick="gpresentCount('an', 'gpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="ao" onclick="gleaveCount('ao', 'gleave', 'tleave', 'dtotal')">L</button>
+    <button id="ap" onclick="gabsentCount('ap', 'gabsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+
+        <div class="shz"><img src="https://i.pinimg.com/564x/0b/97/d3/0b97d34bbf58e8048a04955f9f0c4e45.jpg">
+            <div>
+               
+    <button id="aq" onclick="incrementCount('aq', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="ar" onclick="bleaveCount('ar', 'bleave', 'tleave','dtotal')">L</button>
+    <button id="as" onclick="babsentCount('as', 'babsent', 'tabsent','dtotal')">A</button>
+            </div>
+            </div>
+
+        <div class="sd"><img src="https://i.pinimg.com/564x/1b/5a/60/1b5a60a5a7b06ff1da95adeddea7e7a0.jpg">
+            <div>
+    <button id="at" onclick="gpresentCount('at', 'gpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="au" onclick="gleaveCount('au', 'gleave', 'tleave', 'dtotal')">L</button>
+    <button id="av" onclick="gabsentCount('av', 'gabsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+        <div class="st"><img src="https://i.pinimg.com/originals/de/ee/2b/deee2bc78de18d6abfdbdb62f3d08a51.png">
+            <div>
+     <button id="aw" onclick="incrementCount('aw', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="ax" onclick="bleaveCount('ax', 'bleave', 'tleave', 'dtotal')">L</button>
+    <button id="ay" onclick="babsentCount('ay', 'babsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+
+        <div class="sz"><img src="https://i.pinimg.com/originals/ca/e7/3b/cae73b1d73b74c4c476f3c064b6b85bd.png">
+            <div>
+    <button id="az" onclick="gpresentCount('az', 'gpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="ba" onclick="gleaveCount('ba', 'gleave', 'tleave', 'dtotal')">L</button>
+    <button id="bb" onclick="gabsentCount('bb', 'gabsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+
+        <div class="sl"><img src="https://i.pinimg.com/originals/96/8f/b7/968fb73784cec06c9c875bccab3f6ebb.png">
+            <div>
+     <button id="bc" onclick="incrementCount('bc', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="bd" onclick="bleaveCount('bd', 'bleave', 'tleave', 'dtotal')">L</button>
+    <button id="be" onclick="babsentCount('be', 'babsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+        <div class="td"><img src="https://i.pinimg.com/originals/10/52/9b/10529b48cd58a9b33440653410988d6e.png">
+            <div>
+    <button id="bf" onclick="incrementCount('bf', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="bg" onclick="bleaveCount('bg', 'bleave', 'tleave', 'dtotal')">L</button>
+    <button id="bh" onclick="babsentCount('bh', 'babsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+
+        <div class="u"><img src="https://i.pinimg.com/originals/94/dd/ee/94ddeebec20d5aba30cf16c3bd31232c.png">
+            <div>
+    <button id="bi" onclick="incrementCount('bi', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="bj" onclick="bleaveCount('bj', 'bleave', 'tleave', 'dtotal')">L</button>
+    <button id="bk" onclick="babsentCount('bk', 'babsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+        <div class="uda"><img src="https://i.pinimg.com/originals/51/3e/8b/513e8b69b3ec23f9d4cd3cc78a16a55c.png">
+            <div>
+    <button id="bl" onclick="incrementCount('bl', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="bm" onclick="bleaveCount('bm', 'bleave', 'tleave', 'dtotal')">L</button>
+    <button id="bn" onclick="babsentCount('bn', 'babsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+        <div class="udb"><img src="https://i.pinimg.com/564x/29/6d/0d/296d0dd2e67605a5cba17df51cfdbafa.jpg">
+            <div>
+    <button id="bo" onclick="incrementCount('bo', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="bp" onclick="bleaveCount('bp', 'bleave', 'tleave', 'dtotal')">L</button>
+    <button id="bq" onclick="babsentCount('bq', 'babsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+            </div>
+        <div class="yw"><img src="https://i.pinimg.com/originals/a7/2d/9f/a72d9f9dcc5c3af284a7f85bf6f13f13.png">
+            <div>
+    <button id="br" onclick="incrementCount('br', 'bpresent', 'tpresent', 'dtotal')">P</button>
+    <button id="bs" onclick="bleaveCount('bs', 'bleave', 'tleave', 'dtotal')">L</button>
+    <button id="bt" onclick="babsentCount('bt', 'babsent', 'tabsent', 'dtotal')">A</button>
+            </div>
+        </div>
+    </div>
+  
+     <div class="form">
+<input type="button" value=" TOTAL STUDENTS" >
+    <input id="dtotal" type="number" value="0">
+
+    </div>
+
+
+<div id="form2">    
+<input type="button" value=" BOYS TOTAL">
+    <input id="btotal" type="number" value="14">
+<br>
+<input type="button" value=" PRESENT">
+  <input id="bpresent" type="number" value="0">
+<br>
+<input type="button" value=" LEAVE">
+   <input id="bleave" type="number" value="0">
+<br>
+<input type="button" value=" ABSENT">
+ <input id="babsent" type="number" value="0">
+<br><br>
+<input type="button" value=" GIRLS TOTAL">
+ <input id="gtotal" type="number" value="10">
+<br>
+<input type="button" value= "PRESENT">
+<input id="gpresent" type="number" value="0">
+<br>
+<input type="button" value=" LEAVE">
+ <input id="gleave" type="number" value="0">
+
+<br>
+<input type="button" value=" ABSENT">
+   <input id="gabsent" type="number" value="0">
+<br>
+
+</div>
+
+<div id="calctotal">
+
+<input type="button" value="TOTAL PRESENT">
+   <input id="tpresent" type="number" value="0">
+
+<input type="button" value="TOTAL LEAVE">
+ <input id="tleave" type="number" value="0">
+ 
+ 
+<input type="button" value="TOTAL ABSENT">
+  <input id="tabsent" type="number" value="0">
+</div>
+
+<input id="reset" type="reset" value="Reset">
+<input id="submit" type="submit" value="submit">
+
+
+</form>
+</body>
+</html>

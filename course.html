@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="course.css">
+</head>
+<center><h1>Courses</h1></center>
+<body>
+  <script>
+    function calculateTotal() {
+      var bpresent = parseInt(document.getElementById("bpresent").value);
+      var gpresent = parseInt(document.getElementById("gpresent").value);
+      var babsent = parseInt(document.getElementById("babsent").value);
+      var gabsent = parseInt(document.getElementById("gabsent").value);
+      var bleave = parseInt(document.getElementById("bleave").value);
+      var gleave = parseInt(document.getElementById("gleave").value);
+      
+      if (isNaN(bpresent) || isNaN(gpresent) || isNaN(babsent) || isNaN(gabsent) || isNaN(bleave) || isNaN(gleave)) {
+        alert("Please enter valid numbers.");
+        return;
+      }
+     
+      var totalpresent =  bpresent + gpresent;
+      document.getElementById("totalpresent").value = totalpresent;
+      var totalabsent =  gabsent + babsent;
+      document.getElementById("totalabsent").value = totalabsent;
+      var totalleave =  gleave + bleave;
+      document.getElementById("totalleave").value = totalleave;
+    }
+    
+  </script>
+
+  <div class="form">
+    <input type="button" value=" TOTAL DESSUP">
+    <input type="number" value="" class="total">
+  </div>
+
+  <div class="form2">
+    <input type="button" value=" BOYS TOTAL">
+    <input type="number" value="" id="btotal"><br>
+    <input type="button" value=" PRESENT">
+    <input type="number" value="" id="bpresent"><br>
+    <input type="button" value=" LEAVE">
+    <input type="number" value="" id="bleave"><br>
+    <input type="button" value=" ABSENT">
+    <input type="number" value="" id="babsent"><br><br><br>
+    <input type="button" value=" GIRLS TOTAL">
+    <input type="number" value="" id="gtotal"><br>
+    <input type="button" value="PRESENT">
+    <input type="number" value="" id="gpresent"><br>
+    <input type="button" value="LEAVE">
+    <input type="number" value="" id="gleave"><br>
+    <input type="button" value=" ABSENT">
+    <input type="number" value="" id="gabsent"><br>
+  </div>
+
+  <div class="calctotal">
+    <input type="button" value="TOTAL PRESENT"  onclick="calculateTotal()">
+    <input type="number" value="" id="totalpresent"><br>
+    <input type="button" value="TOTAL LEAVE"   onclick="calculateTotal()">
+    <input type="number" value="" id="totalleave"><br>
+    <input type="button" value="TOTAL ABSENT"   onclick="calculateTotal()">
+    <input type="number" value="" id="totalabsent"><br>
+  </div>
+
+
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="https://i.pinimg.com/originals/9e/97/84/9e9784dfaf4245cc96730e036cad9056.png" alt="Image 1" class="client"><p>
+        ICT A</p>
+    </div>
+    <div class="grid-item">
+      <img src="https://i.pinimg.com/originals/9e/97/84/9e9784dfaf4245cc96730e036cad9056.png" alt="Image 2" class="client">
+    <p>ICT B</p>
+    </div>
+    <div class="grid-item">
+      <img src="https://i.pinimg.com/originals/9e/97/84/9e9784dfaf4245cc96730e036cad9056.png" alt="Image 3" class="client">
+      <p>ICT C</p>
+    </div>
+    <div class="grid-item">
+      <a href="./web.html"><img src="https://i.pinimg.com/originals/7f/74/bf/7f74bf276b316bfdd4c7d77699c2f858.png" alt="Image 4" class="client">
+      </a><p>WEB DEV</p>
+    </div>
+    <div class="grid-item2">
+      <img src="https://i.pinimg.com/originals/cb/8f/0b/cb8f0b0369a601b232c4882dd49c3b58.png" alt="Image 5" class="client">
+      <p>DRIVING</p>
+    
+    </div>
+  </div>
+</body>
+</html>
